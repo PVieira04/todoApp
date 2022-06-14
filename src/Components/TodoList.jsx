@@ -4,11 +4,11 @@ const TodoList = () => {
     const { todoList, removeTodo } = useTodoContext();
 
     return (
-        <ul>
+        <ul className="list">
             {todoList.map((todo, index) => (
-                <li key={index}>
+                <li className="list-item" key={index}>
                     {todo}
-                    <button onClick={() => removeTodo(index)}>x</button>
+                    <button className="delete-button" onClick={() => removeTodo(index)}>x</button>
                 </li>
             ))}
         </ul>

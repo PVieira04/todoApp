@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useTodoContext } from "../providers/TodoProvider";
 
 const TodoForm = () => {
-    const { getNumberofTodoItems, addTodo } = useTodoContext(); 
+    const { getNumberOfTodoItems, addTodo } = useTodoContext(); 
+    console.log(getNumberOfTodoItems);
     const [todoItem, setTodoItem] = useState("");
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -16,9 +17,9 @@ const TodoForm = () => {
     };
     return (
         <form onSubmit={handleOnSubmit}>
-            <h3>Number of todo items: {getNumberofTodoItems}</h3>
+            <h3>Number of todo items: {getNumberOfTodoItems()}</h3>
             <input type="text" value={todoItem} onChange={e => setTodoItem(e.target.value)}/>
-            <button type="submit">Submit</button>
+            <button className="add-button" type="submit">Add Item</button>
         </form>
     );
 };

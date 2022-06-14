@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(23, 62, 99);
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.delete-button {
+    align-items: center;
+    background-color: darkgoldenrod;
+    color: aqua;
+    margin: auto 5px;
+    border-radius: 30%;
+    text-align: center;
+    
+}
+
+.list {
+    background-color: brown;
+    background: none;
+    margin: auto 10%;
+}
+
+.list-item {
+    margin: 1px;
+    border: 5px;
+    text-align: left;
+}
+
+.add-button {
+    margin: 0 1px;
+    background-color: rgb(163, 24, 94);
+}

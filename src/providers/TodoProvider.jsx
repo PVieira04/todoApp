@@ -2,14 +2,14 @@ import { createContext, useContext, useState } from "react";
 
 const TodoContext = createContext();
 
-const initialTodoListState = ["Add Items by typing in the box above and pressing enter or clicking submit"]; // This is the initial state of "todoList". How can I remove the first item?
+const initialTodoListState = ["Buy milk"]; // This is the initial state of "todoList". How can I remove the first item?
 
 const TodoProvider = ({ children }) => {        //TodoProvider is the name of the function which provides all the props. We usually name it the same as the file.
     const [todoList, setTodoList] = useState(initialTodoListState);
 
     console.log(todoList);
 
-    function getNumberOfTodoItems() {
+    const getNumberOfTodoItems = () => {
         return todoList.length;
     }
 
